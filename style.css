@@ -1,0 +1,73 @@
+/* Selects all elements */
+* {
+    /* Includes the padding and border when setting a width or height for an element */
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #0275ff;
+    color: #eef1ef;
+    font-family: 'Open Sans', sans-serif;
+    /* Flexbox used to center div container in browser window */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* So the div container will be centered vertically in the browser window (A.K.A. Viewport) */
+    min-height: 100vh;
+    /* So the div container si not up against the end of the viewport on smaller screen sizes */
+    padding: 25px;
+  }
+  h2 {
+    /* Top Right/Left Bottom */
+    margin: 10px 0 20px;
+    text-align: center;
+  }
+  .container {
+    background-color: #443850;
+    padding: 15px;
+    width: 350px;
+    border-radius: 5px;
+  }
+  .result-container {
+    background-color: #243119;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px;
+    /* Flexbox used to position the span */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* To position the clipboard button */
+    position: relative;
+  }
+  .btn {
+    background-color: #0275ff;
+    /* Removes the default button border */
+    border: none;
+    color: #eef1ef;
+    /* Changes the cursor when hovering over a button */
+    cursor: pointer;
+    padding: 8px 12px;
+  }
+  .setting {
+    /* Using flexbox to create space between the labels and inputs */
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  #clipboard {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+  }
+  #generate {
+    font-size: 16px;
+    width: 100%;
+  }
+  /* Change font size of generated password for smaller screens */
+  @media (max-width: 400px){
+    .result-container {
+      font-size: 14px;
+    }
+  }
